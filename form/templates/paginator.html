@@ -1,0 +1,50 @@
+{%load static%}
+
+<link href="{%static 'css/paginator.css'%}" rel="stylesheet">
+
+
+
+       
+  
+          
+            {%if page.has_previous%}
+          <button class='btn btn-5' onclick="myFunction3(event)">Previous</button>
+
+          <script>
+            function myFunction3(event) {
+        event.preventDefault();
+                location.href='?page={{ page.previous_page_number }}'
+            }
+              </script>
+
+
+      
+          {%endif%}
+          <li style="font: 40px Arial, sans-serif;"><span>{{page.number}}</span></li>
+          
+       
+          {% if page.has_next %}
+          <button class='btn btn-5' onclick="myFunction4(event)">Next</button>
+
+
+          <script>
+
+function myFunction4(event) {
+        event.preventDefault();
+                location.href='?page={{ page.next_page_number }}'
+      }
+ 
+          </script>
+
+          
+          {% endif %}
+
+
+         
+    
+           
+        
+     
+      
+     
+

@@ -1,0 +1,494 @@
+<!-- @prettier -->
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ask to IIITians</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--===============================================================================================-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-166050406-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-166050406-1');
+		</script>
+
+		<!-- Title of your page: add the name of your IIIT-->
+		
+		<meta
+			content="This is All IIIT page of the community IIITians Network"
+			name="descriptison"
+		/>
+		<!--You have to update the name of your IIIT in both these lines -->
+		<meta content="IIITians Network - All IIIT" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="{%static 'img/logo/iiitian.png'%}" rel="icon" />
+		<link href="{%static 'img/logo/iiitian.png'%}" rel="apple-touch-icon" />
+		<link href="{%static 'assets/vendor/icofont/icofont.min.css'%}" rel="stylesheet" />
+		<link
+			href="{%static 'assets/vendor/boxicons/css/boxicons.min.css'%}"
+			rel="stylesheet"
+		/>
+		
+        <link href="{%static 'assets/vendor/aos/aos.css'%}" rel="stylesheet" />
+        <link href="{%static 'css/home.css'%}" rel="stylesheet" />
+		
+		<!-- Main CSS File -->
+		<link href="{%static 'assets/css/main.css'%}" rel="stylesheet" />
+        <link href="{%static 'assets/css/asktoiiitians.css'%}" rel="stylesheet"/>
+		<!-- Carousel files -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+	
+        <!-- -------------------jQuery.min.js  very important-------------------- -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/examples/assets/library/jquery.min.js"
+			integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+			crossorigin="anonymous"
+		></script>
+		<!--===============================================================================================-->
+		<!--===============================================================================================-->
+
+		<!-- semantic ui================================================================================== -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/dropdown.min.css"
+			integrity="sha256-uJcWG4z2GKiVmddxuVaioBQqds/UAfBKpuMlw2Xmc7Y="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/icon.min.css"
+			integrity="sha256-fKCK3zmd9JSWryl3fplGKRPoAesoo5EQNgZh7QfiJO4="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/reset.min.css"
+			integrity="sha256-PbhBheyOcQkkPrk4nOoa3fhBS9nvh8m2G3i0ROBsmAw="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/site.min.css"
+			integrity="sha256-LeLw9KNoiXRBaEvGHTGo5G8zL2La8Q7OCqKjBA9wFtk="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/transition.min.css"
+			integrity="sha256-Hj1yjp4fXn19k1azEVKT0aEvgUWt/HlVBO6xnhidiUs="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/button.min.css"
+			integrity="sha256-7sp3jAcJ/01Y8FJwjPUPcI6xS6sZgXCQMkKB15rj2Lw="
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/transition.js"
+			integrity="sha256-8zBGVHK2KVy4tvMvuozioOrzzkztEu/DBezXB9gXFzc="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/dropdown.js"
+			integrity="sha256-mgOW6jcFYHhWXi8p4MMNdM2tYaH1GqGCrEudj8PAXns="
+			crossorigin="anonymous"
+		></script>
+
+		<!--================= Loader Part start ===============-->
+		<script type="text/javascript">
+			$(window).load(function () {
+				$('.se-pre-con').fadeOut('slow');
+			});
+		</script>
+
+		<style>
+			.no-js #loader {
+				display: none;
+			}
+
+			.js #loader {
+				display: block;
+				position: absolute;
+				left: 100px;
+				top: 0;
+			}
+
+			.se-pre-con {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				background: url('{%static "img/loader/loader_high_quality.gif"%}') center
+					no-repeat #fff;
+			}
+			@media screen and (max-width: 670px) {
+				.se-pre-con {
+					background-size: contain;
+				}
+			}
+			
+		</style>
+		<!-- semantic ui form custom css ----- important------------------- -->
+		<style>
+			main {
+				padding: 100px 0px;
+			}
+			.form-container {
+				font-size: 14px;
+			}
+			.all-container {
+				background-color: white;
+				border-bottom-left-radius: 10px;
+				border-top-right-radius: 15px;
+				box-shadow: 4px -2px 5px 0px #00000040;
+			}
+		</style>
+		<script>
+			function myFunction1(event) {
+				event.preventDefault();
+                location.href="{%url 'home'%}"
+			}
+
+           
+          
+
+		</script>
+
+		<!--=====================JS FOR SUBMIT BUTTON=====================-->
+		
+		<!-- semantic ui form custom css end ------------------------------- -->
+	</head>
+	<body style="background-color: #c0c0c8">
+		<div class="se-pre-con"></div>
+		<!-- ======= Header ======= -->
+		<header id="header" class="fixed-top">
+			<div class="container-fluid d-flex">
+				<div class="logo mr-auto">
+					<a href="{%url 'home'%}"
+						><img
+							src="{%static 'img/logo/iiitian.png'%}"
+							alt=""
+							class="img-fluid"
+					/></a>
+				</div>
+
+				<nav class="nav-menu d-none d-lg-block">
+					<ul>
+						<li><a href="https://iiitiansnetwork.com/">Home</a></li>
+						
+						<li>
+							<a href="http://team.iiitiansnetwork.com/"
+								>Our Team</a
+							>
+						</li>
+						<li class="active">
+							<a href="https://alliiit.iiitiansnetwork.com/"
+								>All IIIT</a
+							>
+						</li>
+						<li>
+							<a href="https://contact.iiitiansnetwork.com/"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<!-- .nav-menu -->
+			</div>
+		</header>
+		<!-- End Header -->
+		<main id="main" style="background-color: #c0c0c8">
+			<div
+				class="container d-flex flex-wrap justify-content-around align-items-center p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 form-container"
+			>
+				<div
+					class="col-11 col-md-9 col-lg-8 col-xl-7 d-flex flex-wrap justify-content-around align-items-center p-0 m-0 all-container"
+				>
+					<div
+						class="d-flex flex-wrap justify-content-around align-items-center mb-5 img-container"
+					>
+						<img
+							src="{%static 'img/logo/logo3.jpeg'%}"
+							class="mw-100"
+							alt="college-comparator"
+							style="border-top-right-radius: 15px;border-top-left-radius: 15px;height: 250px;width: 100%;"
+						/>
+					</div>
+					<h1 style="font-family:'lato';color:green">ASK TO IIITians</h1>
+					<form action="" class="col-9 mb-5 text-center choice-form">
+					<!--THE MARKUP-->
+   <br>
+       
+  {% for question in queries %}
+   <div class="acc-container">
+     <input id="acc{{forloop.counter}}" type="checkbox"/>
+     <label class="acc-heading" for="acc{{forloop.counter}}">{{question.query}}</label>
+     {%if question.replied is True%}
+     <div class="acc-content">{{question.reply}}<br><br>Asked by->{{question.name}}</div>
+     {%else%}
+     <div class="acc-content">No Reply Found<br><br>Asked by->{{question.name}}</div>
+     {%endif%}
+     <div style='text-align: center'>
+       <div>
+           <button type="button" style="background-color: #4CAF50;
+           border: none;
+           color: white;
+           padding: 15px 32px;
+           text-align: center;
+           display: inline-block;
+           font-size: 16px;
+           cursor: pointer;"
+           onclick="myFunction2(event)">Reply</button>
+           <script>
+                function myFunction2(event) {
+				event.preventDefault();
+                location.href="{%url 'reply' question.id%}"
+			}
+           </script>
+   
+           <button type="button" style="background-color:red;
+           border: none;
+           color: white;
+           padding: 15px 32px;
+           text-align: center;
+           display: inline-block;
+           font-size: 16px;
+           cursor: pointer;"
+           onclick="myFunction3(event)">Delete</button>
+           <script>
+                 function myFunction3(event) {
+				event.preventDefault();
+                location.href="{%url 'delete' question.id%}"
+			}
+           </script>
+       </div>
+   </div>
+     
+   </div>
+   {% endfor %}
+   <div style='text-align: center;'>
+       <div>
+   
+   {% include "paginator.html" with page=queries %}
+                        <br>
+						
+				</button>
+				<button class="positive ui button col-xs-3"
+					class="btn btn-primary"
+					onclick="myFunction1(event)"
+					>
+					Home
+				</button>
+			</button>
+			
+
+      
+    </div>
+	
+					</form>
+
+				</div>
+			</div>
+				
+		</main>
+			<script>
+				$('.ui.dropdown').dropdown();
+			</script>
+
+		</main>
+		<footer id="footer">
+			
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-lg-3 col-md-6 footer-contact"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<h3>IIITians Network</h3>
+							<p>
+								A never ending connection...<br /><br />
+								<strong>Email:</strong>
+								iiitiansnetwork@gmail.com<br />
+								<strong>Hit Counter</strong><br /><a
+									href="https://www.freecounterstat.com"
+									title="free hit counters"
+									><img
+										src="https://counter3.stat.ovh/private/freecounterstat.php?c=am3swfnxwq8cga496ku7nw7ebfcg8rfq"
+										border="0"
+										title="free hit counters"
+										alt="free hit counters" /></a
+								><br />
+							</p>
+						</div>
+
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<h4>Useful Links</h4>
+							<ul>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="https://iiitiansnetwork.com/"
+										>Home</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="https://iiitiansnetwork.com/"
+										>News</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a
+										href="https://alliiit.iiitiansnetwork.com/"
+										>All IIIT</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a
+										href="https://contact.iiitiansnetwork.com"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
+							<h4>Our Community</h4>
+							<ul>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="http://team.iiitiansnetwork.com/"
+										>Core Team</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a
+										href="http://team.iiitiansnetwork.com/#web"
+										>Web Team</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a
+										href="http://team.iiitiansnetwork.com/#design"
+										>Design Team</a
+									>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a
+										href="http://team.iiitiansnetwork.com/#design"
+										>Animation Team</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
+							<h4>Our Social Networks</h4>
+							<p>Follow us to stay connected with IIITs</p>
+							<div class="social-links mt-3">
+								<a
+									href="https://t.me/joinchat/PbhPfBW9YSqXvAS20Y09ng"
+									class="telegram"
+									target="_blank"
+									><i class="bx bxl-telegram"></i
+								></a>
+								<a
+									href="https://www.facebook.com/iiitians.network/?fref=tag"
+									class="facebook"
+									target="_blank"
+									><i class="bx bxl-facebook"></i
+								></a>
+								<a
+									href="https://www.instagram.com/iiitians.network/"
+									class="instagram"
+									target="_blank"
+									><i class="bx bxl-instagram"></i
+								></a>
+								<a
+									href="https://www.linkedin.com/company/53184003"
+									class="linkedin"
+									target="_blank"
+									><i class="bx bxl-linkedin"></i
+								></a>
+								<a
+									href="https://www.youtube.com/channel/UCFlPhj8XnKBWc1cNSC8IedA"
+									class="linkedin"
+									target="_blank"
+									><i class="bx bxl-youtube"></i
+								></a>
+							</div>
+							<p>
+								
+								><br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container py-4">
+				<div class="copyright">
+					&copy; Copyright
+					<strong><span>IIITians Network</span></strong
+					>. All Rights Reserved
+				</div>
+				<div class="credits" style="color: #fef8f5">
+					
+                    Powered by
+					<a href="https://bootstrapmade.com/" style="color: #fef8f5"
+						>BootstrapMade</a
+					>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+        <script src="{%static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+		<script src="{%static 'assets/vendor/aos/aos.js'%}"></script>
+		
+		<script src="{%static 'assets/js/main.js'%}"></script>
+        <script src="{%static 'js/jquery/jquery-2.2.4.min.js'%}"></script>
+        <script src="{%static 'js/home.js'%}"></script>
+
+		
+    </body>
+</html>
