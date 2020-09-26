@@ -173,6 +173,20 @@
           
 
 		</script>
+		 <script>
+			function myFunction2(event, id) {
+			event.preventDefault();
+			var url_mask = "{% url 'reply' 12345 %}".replace(/12345/, id.toString());
+			location.href=url_mask
+		}
+	   </script>
+	    <script>
+			function myFunction3(event, id) {
+		   event.preventDefault();
+		   var url_mask = "{% url 'delete' 12345 %}".replace(/12345/, id.toString());
+		   location.href=url_mask
+	   }
+	  </script>
 
 		<!--=====================JS FOR SUBMIT BUTTON=====================-->
 		
@@ -258,13 +272,8 @@
            display: inline-block;
            font-size: 16px;
            cursor: pointer;"
-           onclick="myFunction2(event)">Reply</button>
-           <script>
-                function myFunction2(event) {
-				event.preventDefault();
-                location.href="{%url 'reply' question.id%}"
-			}
-           </script>
+           onclick="myFunction2(event, {{question.id}})">Reply</button>
+          
    
            <button type="button" style="background-color:red;
            border: none;
@@ -274,13 +283,8 @@
            display: inline-block;
            font-size: 16px;
            cursor: pointer;"
-           onclick="myFunction3(event)">Delete</button>
-           <script>
-                 function myFunction3(event) {
-				event.preventDefault();
-                location.href="{%url 'delete' question.id%}"
-			}
-           </script>
+           onclick="myFunction3(event, {{question.id}})">Delete</button>
+          
        </div>
    </div>
      
